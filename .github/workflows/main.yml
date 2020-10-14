@@ -1,0 +1,15 @@
+name: "Tests"
+
+on:
+    push:
+        branches:
+          -master
+
+jobs:
+    hellow-world:
+        runs-on: ubuntu-20.04
+
+        steps:
+            - name: echo hello world
+              shell: bash
+              run: echo Hello, world!
